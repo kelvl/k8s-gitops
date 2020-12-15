@@ -1,0 +1,4 @@
+creation_rules:
+    - path_rgex: \.enc\.yaml$
+      pgp: A12281A07AAE4D4C3DBE17AEB909564BC34C7D59 
+      encrypted_regex: '^(data|stringData)$'
