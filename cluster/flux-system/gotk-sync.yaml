@@ -11,9 +11,6 @@ spec:
   secretRef:
     name: flux-system
   url: ssh://git@github.com/kelvl/k8s-gitops
-  ignore: |
-    # exclude all encrypted files
-    *.enc.yaml
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
@@ -21,6 +18,10 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
   interval: 10m0s
   path: ./cluster
   prune: true
