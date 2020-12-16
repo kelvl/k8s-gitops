@@ -20,4 +20,4 @@ spec:
     image:
       repository: ghcr.io/stefanprodan/podinfo
       pullPolicy: Always
-      tag: 5.0.1
+      tag: 5.1.2
