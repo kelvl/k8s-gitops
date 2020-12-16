@@ -1,22 +1,21 @@
-# apiVersion: helm.toolkit.fluxcd.io/v2beta1
-# kind: HelmRelease
-# metadata:
-#   name: podinfo
-#   namespace: staging
-# spec:
-#   interval: 5m
-#   chart:
-#     spec:
-#       chart: podinfo
-#       version: '4.0.x'
-#       sourceRef:
-#         kind: HelmRepository
-#         name: podinfo-charts
-#         namespace: flux-system
-#       interval: 1m
-#   values:
-#     replicaCount: 2
-#     image:
-#       repository: ghcr.io/stefanprodan/podinfo
-#       tag: '4.0.x'
-#       pullPolicy: IfNotPresent
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: podinfo
+  namespace: staging
+spec:
+  interval: 5m
+  chart:
+    spec:
+      # renovate: registryUrl=https://stefanprodan.github.io/podinfo
+      chart: podinfo
+      sourceRef:
+        kind: HelmRepository
+        name: podinfo-charts
+        namespace: flux-system
+      interval: 1m
+  values:
+    replicaCount: 2
+    image:
+      repository: ghcr.io/stefanprodan/podinfo
+      pullPolicy: Always
