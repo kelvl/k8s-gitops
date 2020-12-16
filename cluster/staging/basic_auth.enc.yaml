@@ -1,0 +1,37 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:FnLleDlfOzjjlA0I,iv:dECWT4sqDrFE7Vv7rFi4M2lkWOj8XW5xaiudG9SJT6Y=,tag:an7+EUT/7a0MWcV0oyd2EQ==,type:str]
+    user: ENC[AES256_GCM,data:52Gk9KQFj5g=,iv:ndC07UdRfJuUdidtdzfH3LL4tJXoLXqJl6ISHlFWbfI=,tag:jjveRFW1D+r4f8Ps9NRJVw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: basic-auth
+    namespace: staging
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    lastmodified: '2020-12-16T01:17:05Z'
+    mac: ENC[AES256_GCM,data:fJg7FtBV8Qbzr9wrDvbkj1DED6b7979zVUoEeCifyda17UvI2qPLOBeBcuSCZ5wDsuH1BLAI1BG2ulUZLHbCQwZG/+Acahn9ZJ30Kbe8lCHWSVX5SEcUrtBJg2ydio8CJppiU/jNLQ/nzDkR76U0VPuDMNrq0CHlMQCJS+pZI5c=,iv:dGaecXQ3tmrpqBTuX6irS4LBjkUxDHwsKxZRbILcsmE=,tag:11kd1Oce00Hpygy4NQ6qJg==,type:str]
+    pgp:
+    -   created_at: '2020-12-16T01:17:04Z'
+        enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQGMAx3nQThvd9UGAQwAnetMfGdKXeeMIB2wcU7NKZL23yWvH9pmFtZvdbIc1Gu/
+            dPg6qr7Io3k3FS28X7YyuUzkofwFgxiLWs6qcP3J1Bsk7hu5m+x/Oil9Fx6716Sk
+            Aa97FSoJ1F4Pwtf7Bej+U6MTsX1ynvcHKr6ie1gWRY6FzRy4uF5fnoQoWgCrwUVa
+            adUHkxyR9q2SD9BEC9XL+bkAgcnweGwGhqpLNbdD9aLJqOSiEP6LXmekhFM+TTDg
+            UoIvKiepesv4W/k20/aoahrWr+6qC6F2tybjEsAYxxLN8wn2o94DFf0KbJtPPhsQ
+            gbhvEF6JXpFQK33rJ4r2JJQCGQCv7wpEKcIlrk+I2SveRFVc0AtF4nMt+omF9fzu
+            qR1YTiennd/ZKz8jeQcURMG78SDuDUg8sisNV+1F/74b6pGpbt9HanhUEdxb9mvu
+            Sov+KdWR0VYucfTIfCrF6UQ3zPnZMzb4AoGRapt7v55e8UITl3H7Wc3KH/KDvcNI
+            Ha7oqdgdGV/dCZ5dHYds0l4BEpYPxNwe7PoAscvtxYYLIz3RFI1tItzQPt6gad74
+            ldD8bAe/6inO+n0OJ+HCJLOfKsejnh5v8C8N7mXAB12I3K+rLbT/PP8dGomDtU2/
+            RXwi6lJ9IlEfz0gmKm/U
+            =0a+/
+            -----END PGP MESSAGE-----
+        fp: A12281A07AAE4D4C3DBE17AEB909564BC34C7D59
+    encrypted_regex: ^(data|stringData)$
+    version: 3.6.1
