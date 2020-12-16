@@ -16,7 +16,7 @@ spec:
       interval: 1m
   values:
     replicaCount: 2
-  image:
-    repository: ghcr.io/stefanprodan/podinfo
-    tag: '4.0.x'
-    pullPolicy: IfNotPresent
+    image:
+      repository: ghcr.io/stefanprodan/podinfo
+      tag: '4.0.x'
+      pullPolicy: IfNotPresent
