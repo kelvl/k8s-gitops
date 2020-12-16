@@ -2,6 +2,7 @@ apiVersion: v1
 data:
     password: ENC[AES256_GCM,data:FnLleDlfOzjjlA0I,iv:dECWT4sqDrFE7Vv7rFi4M2lkWOj8XW5xaiudG9SJT6Y=,tag:an7+EUT/7a0MWcV0oyd2EQ==,type:str]
     user: ENC[AES256_GCM,data:52Gk9KQFj5g=,iv:ndC07UdRfJuUdidtdzfH3LL4tJXoLXqJl6ISHlFWbfI=,tag:jjveRFW1D+r4f8Ps9NRJVw==,type:str]
+    hello: ENC[AES256_GCM,data:8/0YgfM=,iv:SQ+nQc4uYnlgVzMyMwATPG0UpQDu596zfKICoYsSths=,tag:FSb4OJEiZViRlZ1G9rMH8w==,type:str]
 kind: Secret
 metadata:
     creationTimestamp: null
@@ -12,8 +13,8 @@ sops:
     gcp_kms: []
     azure_kv: []
     hc_vault: []
-    lastmodified: '2020-12-16T01:17:05Z'
-    mac: ENC[AES256_GCM,data:fJg7FtBV8Qbzr9wrDvbkj1DED6b7979zVUoEeCifyda17UvI2qPLOBeBcuSCZ5wDsuH1BLAI1BG2ulUZLHbCQwZG/+Acahn9ZJ30Kbe8lCHWSVX5SEcUrtBJg2ydio8CJppiU/jNLQ/nzDkR76U0VPuDMNrq0CHlMQCJS+pZI5c=,iv:dGaecXQ3tmrpqBTuX6irS4LBjkUxDHwsKxZRbILcsmE=,tag:11kd1Oce00Hpygy4NQ6qJg==,type:str]
+    lastmodified: '2020-12-16T01:22:47Z'
+    mac: ENC[AES256_GCM,data:WSVfmHljGpIuhgwfJqTBFxZzejX0s0iZGa5oanO6lwROlgHkTpHmT4AIAKvBKPpPpaMAj/0DU/MgbUWqLNifE86C7b2AyJt7TrWyn8f4h92/Vh0XlIVs0T9QzmiTVNTL3OE1Ka0VPzT5P9XOcUpvtU0Dhsksx4ux90/qfGSt10Y=,iv:Wbpvae9+TuTjD0kXlOa3HTNN5eUwD59AYML4WQY2A9Q=,tag:JDioeDsv6tvzvDZoqJvucQ==,type:str]
     pgp:
     -   created_at: '2020-12-16T01:17:04Z'
         enc: |
