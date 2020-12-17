@@ -1,38 +1,38 @@
-apiVersion: v1
-data:
-    hello: ENC[AES256_GCM,data:ZPQFhE7svJ8=,iv:zUKRcGxaxPzf7UHdhVcgJeB2fzwEPPML6c1hWCWQwP8=,tag:NwiRl2aNACq5XSg+dKbXZA==,type:str]
-    password: ENC[AES256_GCM,data:b1CjcUG0ybJi1fXT,iv:AlC6SB/xGydv6ylimU4ozLgn0Q0insf4AZrdJb/wvZg=,tag:gZlkBXbFtIENv+fWtLjLxQ==,type:str]
-    user: ENC[AES256_GCM,data:vyNROhyUtkk=,iv:tV5hzXXX8uYdMEQWYDFXA0W8H+yOoseG+KDK1aKuCM4=,tag:rSuSCpyOYX+i7tKUGMs1Mg==,type:str]
-kind: Secret
-metadata:
-    creationTimestamp: null
-    name: basic-auth
-    namespace: staging
-sops:
-    kms: []
-    gcp_kms: []
-    azure_kv: []
-    hc_vault: []
-    lastmodified: '2020-12-16T01:25:03Z'
-    mac: ENC[AES256_GCM,data:PsB03hVLtUYBPZ8RAwCeDMLHArG0Ei1fVmJuUqjBRxKHd5SXAXoxN9VIBUGDHE8GnRjIs3ZqjoSNkzveZ3gCyVCQHODTdu1X+fh7zSOulS/kxqQ55l1stEY5S9m8M6gnS1GfI6tEeb3pIpCZXnIHqozaQ8L10qQ9frihdv8UTk8=,iv:ptFbx9G+FFTV7yiIFvc2OyTjWX6uP41gdWyD42L4K8E=,tag:DOcMfEN5hlAlU4xvSpWvJg==,type:str]
-    pgp:
-    -   created_at: '2020-12-16T01:25:02Z'
-        enc: |
-            -----BEGIN PGP MESSAGE-----
+# apiVersion: v1
+# data:
+#     hello: ENC[AES256_GCM,data:ZPQFhE7svJ8=,iv:zUKRcGxaxPzf7UHdhVcgJeB2fzwEPPML6c1hWCWQwP8=,tag:NwiRl2aNACq5XSg+dKbXZA==,type:str]
+#     password: ENC[AES256_GCM,data:b1CjcUG0ybJi1fXT,iv:AlC6SB/xGydv6ylimU4ozLgn0Q0insf4AZrdJb/wvZg=,tag:gZlkBXbFtIENv+fWtLjLxQ==,type:str]
+#     user: ENC[AES256_GCM,data:vyNROhyUtkk=,iv:tV5hzXXX8uYdMEQWYDFXA0W8H+yOoseG+KDK1aKuCM4=,tag:rSuSCpyOYX+i7tKUGMs1Mg==,type:str]
+# kind: Secret
+# metadata:
+#     creationTimestamp: null
+#     name: basic-auth
+#     namespace: staging
+# sops:
+#     kms: []
+#     gcp_kms: []
+#     azure_kv: []
+#     hc_vault: []
+#     lastmodified: '2020-12-16T01:25:03Z'
+#     mac: ENC[AES256_GCM,data:PsB03hVLtUYBPZ8RAwCeDMLHArG0Ei1fVmJuUqjBRxKHd5SXAXoxN9VIBUGDHE8GnRjIs3ZqjoSNkzveZ3gCyVCQHODTdu1X+fh7zSOulS/kxqQ55l1stEY5S9m8M6gnS1GfI6tEeb3pIpCZXnIHqozaQ8L10qQ9frihdv8UTk8=,iv:ptFbx9G+FFTV7yiIFvc2OyTjWX6uP41gdWyD42L4K8E=,tag:DOcMfEN5hlAlU4xvSpWvJg==,type:str]
+#     pgp:
+#     -   created_at: '2020-12-16T01:25:02Z'
+#         enc: |
+#             -----BEGIN PGP MESSAGE-----
 
-            hQGMAx3nQThvd9UGAQv+K7OG4eQRn4np1fbBtUce8ttcpv7skmn9nmEPXnnHpkau
-            Vd4utkTsLmJPb/mGqbf/TJth3N4CnlqOIhPlq0W9ShZoi4tGbjEqBZh4iWedIUeY
-            bzynx+eU/5aDeeRKeCB15BDgXWMUW8SPTaXL18B2piLEZS+WhVWubWSxOEwjKwtL
-            6bVMAghFCyv/u9MVwAaZp+l3n+8NEqUwhvOIYASVcq5gcrOaymgCcS5yO/U5RuRV
-            Lr7wpMLFYU6RyuInEfL2Xct+i9TGxbbi83/tcweFjYwnNM/sgCjxv82Qyhqsc0su
-            Tnl/FfnKR1N5Kml+pLWO1WQNFeUa1HYdYE9hESHMcAfY28R9VAMzueHsoJ342f8H
-            AwowLjbWTnOfj0+egJAfrJx8VVldyDM19NOFfUuOMtDqzI1i0ipRP9rXJbAC6UmV
-            tXQ2QH2g9PZGWZM0XJs4IS8tje265QxnskrAEEq6yA8W2aoMXMFShUZFBjyEWBM2
-            CyC39NTL4tAm4vVJVDHw0l4BC/eHhmWv/9YI58zqlg+y1C+mqqJO2jlCEQQ8nP5z
-            FxObYNaCFcbPPjz0ZQOreZBiIVSR5mOed9+5h5rxN+AcoKjmm8eKiQxH3aN4fyFh
-            DqvVzp/2MCWeCOAgGbts
-            =jbB5
-            -----END PGP MESSAGE-----
-        fp: A12281A07AAE4D4C3DBE17AEB909564BC34C7D59
-    encrypted_regex: ^(data|stringData)$
-    version: 3.6.1
+#             hQGMAx3nQThvd9UGAQv+K7OG4eQRn4np1fbBtUce8ttcpv7skmn9nmEPXnnHpkau
+#             Vd4utkTsLmJPb/mGqbf/TJth3N4CnlqOIhPlq0W9ShZoi4tGbjEqBZh4iWedIUeY
+#             bzynx+eU/5aDeeRKeCB15BDgXWMUW8SPTaXL18B2piLEZS+WhVWubWSxOEwjKwtL
+#             6bVMAghFCyv/u9MVwAaZp+l3n+8NEqUwhvOIYASVcq5gcrOaymgCcS5yO/U5RuRV
+#             Lr7wpMLFYU6RyuInEfL2Xct+i9TGxbbi83/tcweFjYwnNM/sgCjxv82Qyhqsc0su
+#             Tnl/FfnKR1N5Kml+pLWO1WQNFeUa1HYdYE9hESHMcAfY28R9VAMzueHsoJ342f8H
+#             AwowLjbWTnOfj0+egJAfrJx8VVldyDM19NOFfUuOMtDqzI1i0ipRP9rXJbAC6UmV
+#             tXQ2QH2g9PZGWZM0XJs4IS8tje265QxnskrAEEq6yA8W2aoMXMFShUZFBjyEWBM2
+#             CyC39NTL4tAm4vVJVDHw0l4BC/eHhmWv/9YI58zqlg+y1C+mqqJO2jlCEQQ8nP5z
+#             FxObYNaCFcbPPjz0ZQOreZBiIVSR5mOed9+5h5rxN+AcoKjmm8eKiQxH3aN4fyFh
+#             DqvVzp/2MCWeCOAgGbts
+#             =jbB5
+#             -----END PGP MESSAGE-----
+#         fp: A12281A07AAE4D4C3DBE17AEB909564BC34C7D59
+#     encrypted_regex: ^(data|stringData)$
+#     version: 3.6.1
