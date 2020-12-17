@@ -1,0 +1,36 @@
+apiVersion: v1
+data:
+    values.yaml: ENC[AES256_GCM,data:NHksR45zGpKufK3axD2iYF3m6pyjBQndzHPdw/ZOSWa5vDiGzaMjVubGZVnWzWxudwpe3FR9tyUGHbTeuzuT1VXxTG+tZDDFR7WOsfE0/h0ig1upcEZ6fEUR1AhnqyMIMjiyO+RoUrR+KqNML8ncm8in74Xz4z4NEuIT5WnZFhFo0jBksjRPlipMSr/bJPfPouuLEKjIQ1eHrcs+ggF6F5vmkB+yCuh7EUzk0iyrrYT9BoVYDtaSdqaDTBHzeA7x8hMUa1pnCy2gUHaz9oezY+RlNdtbvpXzyHDIAUjuQntFPag=,iv:kJSIYIEkQM8QzFRiYMwCb3vnpfe0K+A3sBpBCn7hrE0=,tag:NYNrzn71VGqzvhvMANw2Gw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: botkube-helm-values
+    namespace: monitoring
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    lastmodified: '2020-12-17T03:05:43Z'
+    mac: ENC[AES256_GCM,data:9gY4p3E7BRxJ74thZ7m+2T3Dn5vlQC/I8V2/FdgTgzW4gZ4TW84vz/c6kYS1ohMpjxhyepC9CAI/xtag07zorNQefdPHQnqQDDlS4Qe/wa/IWhnn0TmGYdpDwmJk2W+EH9MxJq1nbciUzVT95TdRaSJ5OwMCBxPm04QtR61b//8=,iv:vn/hYzMhEw48atBh48jzzmOyp8X0OV+5Y5UO+ZYla0U=,tag:pH5gdSrr12L8HeIXCASs6Q==,type:str]
+    pgp:
+    -   created_at: '2020-12-17T02:44:43Z'
+        enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQGMAx3nQThvd9UGAQv8CLj5zOkzy1WRlhIvOTiRCkca3AmWbHAYAu6o0aza8Q/3
+            LSARvTcKyRlEX4FCV1GVoavnbGmj4kQ62wwOhojP+nIxFW5xkAa0VwPcOXXH7xfx
+            80e4K4JslaY0LX2kj93ZXHDV6OSjSDBhKAs16zVV1Lb3T3RbZBUufUYZ57B7SB2Q
+            Tkwq/Di20aXnuKvQXYn+g4VITmQrZ7tt5XIKY5mWwS0Kl6zsqa2hi5QmdZ7V54BO
+            pWQO35TZdLWYbQ/zBgaxGwfzjKEjILJr8F4a4A0hsXHgV4UdAwuxXKwpvsOTWnCy
+            AySO/sZtDEjel2GDo32PN7EKmDDZoiVG5l00EVo1fS8Wffzcm2kyOWjJAugsb8EV
+            MzxlE7AUiJFldSTneDMcyTgbKZNAJJTCNBlSA/ta4uhrAEwgg2FcSHrFGiBOMKoc
+            wpLWy48IrwqQlS1xH08lux0t7L3OT1yslKidu6XYDTcxxPVl3qd30oiA/VqqeBRZ
+            E34jAaN0tNaFFgPkZ4CC0lwBT0HV51jpVILmJ/ovuCb7tb7FQM9NHtywgtWGJvgx
+            VBV1N5/0dfBxGY2dYw9KB8nbySzFHYwFpJpX+lsa7187F5Kf4CQR4odOnIZQGDb3
+            tE80M7awD/k5DwwBBQ==
+            =yiBT
+            -----END PGP MESSAGE-----
+        fp: A12281A07AAE4D4C3DBE17AEB909564BC34C7D59
+    encrypted_regex: ^(data|stringData)$
+    version: 3.6.1
