@@ -1,0 +1,2 @@
+Kustomize does not automatically process additional yaml files in the flux-system directory. 
+Either we break them out into a separate directory -- flux-system-extra in this case, or we have to write an additional kustomization and reference it as a resource flux-system/kustomize.yaml
