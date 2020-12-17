@@ -5,6 +5,7 @@ metadata:
   name: podinfo-charts
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 10m
   url: https://stefanprodan.github.io/podinfo
+  timeout: 3m
 
