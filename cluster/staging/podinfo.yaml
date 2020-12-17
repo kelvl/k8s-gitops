@@ -23,4 +23,4 @@ spec:
       tag: 5.1.2
     service:
       type: NodePort
-      nodePort: 9999
+      nodePort: 30001
