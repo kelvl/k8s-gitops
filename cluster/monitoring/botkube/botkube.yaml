@@ -21,7 +21,7 @@ spec:
       repository: infracloudio/botkube
       tag: latest
     serviceMonitor:
-      enabled: true
+      enabled: false # disable service monitor until prometheus is setup
     config:
       settings:
         clustername: k8s
