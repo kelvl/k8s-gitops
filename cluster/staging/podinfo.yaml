@@ -21,3 +21,6 @@ spec:
       repository: ghcr.io/stefanprodan/podinfo
       pullPolicy: Always
       tag: 5.1.2
+    service:
+      type: NodePort
+      nodePort: 9999
