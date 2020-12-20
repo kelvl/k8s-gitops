@@ -1,10 +1,10 @@
 apiVersion: v1
 stringData:
-    api-key: ENC[AES256_GCM,data:xvT2OYzAh3xI3/LN0Qovw+jVZoL6yAEaf5SWy1nHsg+436do2WhH2g==,iv:i8LenRTTUByuh8cAJ+Hmce6I5m5XgWr1481n0w/jDTE=,tag:hTELWGyCIf2Ir56LwlknPA==,type:str]
+    api-token: ENC[AES256_GCM,data:xvT2OYzAh3xI3/LN0Qovw+jVZoL6yAEaf5SWy1nHsg+436do2WhH2g==,iv:i8LenRTTUByuh8cAJ+Hmce6I5m5XgWr1481n0w/jDTE=,tag:hTELWGyCIf2Ir56LwlknPA==,type:str]
 kind: Secret
 metadata:
     creationTimestamp: null
-    name: cloudflare-api-key
+    name: cloudflare-api-token
     namespace: cert-manager
 sops:
     kms: []
