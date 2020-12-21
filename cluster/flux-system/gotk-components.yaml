@@ -2108,7 +2108,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
-          successThreshold: 5
+          failureThreshold: 5
         name: manager
         ports:
         - containerPort: 8080
@@ -2181,7 +2181,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
-          successThreshold: 5
+          failureThreshold: 5
         name: manager
         ports:
         - containerPort: 8080
@@ -2255,7 +2255,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
-          successThreshold: 5
+          failureThreshold: 5
         name: manager
         ports:
         - containerPort: 9090
@@ -2334,7 +2334,7 @@ spec:
           httpGet:
             path: /
             port: http
-          successThreshold: 5
+          failureThreshold: 5
         name: manager
         ports:
         - containerPort: 9090
