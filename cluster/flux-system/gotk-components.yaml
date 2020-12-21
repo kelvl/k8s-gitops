@@ -2095,7 +2095,7 @@ spec:
         - --watch-all-namespaces=true
         - --log-level=info
         - --log-json
-        - --enable-leader-election
+        # - --enable-leader-election
         - --concurrent=2
         env:
         - name: RUNTIME_NAMESPACE
