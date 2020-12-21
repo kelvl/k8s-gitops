@@ -18,10 +18,10 @@ spec:
       interval: 5m
   values:
     logLevel: debug
-    secretName: external-dns-secret
     provider: cloudflare
     cloudflare:
       email: calvin18@gmail.com
+      secretName: external-dns-secret
       proxied: true
     domainFilters:
     - kelvinlaw.us
