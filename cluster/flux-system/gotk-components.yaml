@@ -2096,6 +2096,7 @@ spec:
         - --log-level=info
         - --log-json
         - --enable-leader-election
+        - --concurrent=2
         env:
         - name: RUNTIME_NAMESPACE
           valueFrom:
@@ -2107,6 +2108,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
+          successThreshold: 5
         name: manager
         ports:
         - containerPort: 8080
@@ -2179,6 +2181,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
+          successThreshold: 5
         name: manager
         ports:
         - containerPort: 8080
@@ -2252,6 +2255,7 @@ spec:
           httpGet:
             path: /healthz
             port: healthz
+          successThreshold: 5
         name: manager
         ports:
         - containerPort: 9090
@@ -2330,6 +2334,7 @@ spec:
           httpGet:
             path: /
             port: http
+          successThreshold: 5
         name: manager
         ports:
         - containerPort: 9090
