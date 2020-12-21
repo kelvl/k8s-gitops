@@ -23,6 +23,8 @@ spec:
       email: calvin18@gmail.com
       secretName: external-dns-secret
       proxied: true
+    zoneIdFilters:
+    - f1296fd2f566fea379e5f68d9093b0c1
     domainFilters:
     - kelvinlaw.us
     # createSecret: true
